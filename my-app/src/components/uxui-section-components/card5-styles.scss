@@ -1,0 +1,28 @@
+.set {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 14em;
+    height: 7em;
+    margin: .5em;
+    border-radius: 1em;
+    background: white;
+    box-shadow: .5em .5em .5em hsl(0, 0%, 0%, .3);
+    button {
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        box-shadow: .5em .5em .8em hsla(0, 0%, 75%, 0.537);
+        width: 3em;
+        height: 3em;
+        .fa-user {
+            color: #097bed;
+        }
+        .fa-home {
+            color: #ffb12a;
+        }
+        .fa-thumbs-up {
+            color: #d93128;
+        }
+    }
+}

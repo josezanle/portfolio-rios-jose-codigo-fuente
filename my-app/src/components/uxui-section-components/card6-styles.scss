@@ -1,0 +1,74 @@
+.rio-janeiro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    padding: .5em;
+    width: 14em;
+    height: 7em;
+    margin: .5em;
+    background: white;
+    box-shadow: .5em .5em .5em hsl(0, 0%, 0%, .3);
+    // 
+    .mini-video {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: .5em;
+        width: 100%;
+        height: 100%;
+        background: url(../../assets/images/d.jpg) center no-repeat;
+        background-size: cover;
+        i {
+            color: white;
+        }
+    }
+    .minificado {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: column;
+        border-radius: .5em;
+        padding-left: .5em;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        h5 {
+            margin: 0 0 .3em 0;
+            font-family: montserrat;
+        }
+        p {
+            font-size: .7em;
+        }
+        pre {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            font-size: .8em;
+            margin-top: .5em;
+            width: 100%;
+            .fa-eye {
+                margin-right: .3em;
+            }
+            p {
+                margin-right: 5em;
+            }
+        }
+        &:before {
+            position: absolute;
+            top: 0;
+            right: -17em;
+            background: white;
+            border-radius: .5em;
+            font-size: .8em;
+            font-style: italic;
+            width: 14em;
+            height: 3.5em;
+            padding: .5em;
+            margin-left: -6em;
+            content: 'Pequeñas piezas , que en conjunto , forman parte de nuestra querida Web';
+        }
+    }
+}

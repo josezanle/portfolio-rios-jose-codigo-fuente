@@ -1,0 +1,120 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin full-size {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin button {
+    border: none;
+    outline: none;
+    background: rgb(69, 133, 133);
+    padding: .5em 2em;
+    border-radius: .5em;
+    color: white;
+    font-size: .7em;
+}
+
+.card-plant {
+    width: 18em;
+    height: 32em;
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    box-sizing: border-box;
+    box-shadow: .5em .5em .5em hsl(0, 0%, 0%, .3);
+    background-image: url(../../assets/images/diente-de-leon.jpg);
+    margin: .5em;
+    font-family: 'Montserrat', sans-serif;
+    .top-plant {
+        flex: 5;
+        @include full-size();
+        display: flex;
+        justify-content: space-between;
+        .fa-chevron-left {
+            color: white;
+        }
+        .fa-star {
+            color: rgb(236, 208, 49);
+        }
+    }
+    .mid-plant {
+        flex: 3;
+        @include full-size();
+        flex-flow: column;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        border-radius: 1em;
+    }
+    .bottom-plant {
+        @include full-size();
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        button {
+            @include button();
+            width: 100%;
+        }
+    }
+}
+
+.card-plant .mid-plant {
+    .h5-plant {
+        padding: .3em;
+        color: white;
+    }
+    .stars {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: .3em;
+        p {
+            font-size: .6em;
+            margin-right: .5em;
+            color: white;
+        }
+        i {
+            font-size: .6em;
+            margin: 0 .2em;
+            color: white;
+        }
+    }
+    .multi-plant {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .uno-plant,
+        .dos-plant,
+        .tres-plant {
+            width: 4em;
+            height: 1.8em;
+            border: 1px solid white;
+            border-radius: .5em;
+            margin: 0 .2em;
+            text-align: center;
+            .h6-plant {
+                color: white;
+            }
+            .p-plant {
+                font-size: .6em;
+                color: white;
+            }
+        }
+    }
+    .p-description {
+        font-size: .7em;
+        padding: .3em;
+        color: white;
+    }
+}

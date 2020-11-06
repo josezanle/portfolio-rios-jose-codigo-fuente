@@ -1,0 +1,569 @@
+              @mixin flex-center {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+              }
+              
+              @mixin full-size {
+                  width: 100vw;
+                  height: 100%;
+              }
+              
+              @mixin background-fullsize {
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: cover;
+              }
+              
+              //   ===================================================================
+              .home-home {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  width: 100vw;
+                  height: 100vh;
+                  background: url(../images/room.jpg);
+                  @include background-fullsize();
+                  padding: 1em 4em 1em 1em;
+              }
+              
+              .text-home {
+                  display: flex;
+                  flex-flow: column;
+                  justify-content: center;
+                  align-items: flex-start;
+                  padding: 2em;
+                  width: 55%;
+                  height: 70%;
+                  hr {
+                      border: 2px solid white;
+                      width: 5em;
+                      height: 3px;
+                      margin-top: 1.5em;
+                  }
+                  i {
+                      color: white;
+                      margin: 1em .5em .5em 0;
+                      padding-top: .3em;
+                      text-align: center;
+                      border-radius: 50%;
+                      width: 2em;
+                      height: 2em;
+                      border: 2px solid white;
+                  }
+                  p {
+                      color: white;
+                      margin-top: -.5em;
+                  }
+              }
+              
+              .home-home h1 {
+                  font-family: 'montserrat', Arial, Helvetica, sans-serif;
+                  font-variant: small-caps;
+                  color: white;
+                  font-size: 4em;
+                  line-height: .9em;
+              }
+              
+              .home-home h4 {
+                  font-family: 'montserrat', Arial, Helvetica, sans-serif;
+                  font-variant: small-caps;
+                  color: white;
+                  font-size: 1.6em;
+                  margin: .4em 0;
+              }
+              
+              .text-right {
+                  display: flex;
+                  flex-flow: column;
+                  justify-content: center;
+                  align-items: flex-start;
+                  width: 20%;
+                  height: 50%;
+                  background: hsl(0, 0%, 100%, .9);
+                  border-radius: 1em;
+                  padding: 2em;
+                  h2,
+                  p {
+                      color: grey;
+                  }
+              }
+              /* =========================================================================================== */
+              /* esta Seccion define el titulo de cada segmento que ofrece la pagina , se repite 3 veces...Home, Skills  y UX UI */
+              
+              .section {
+                  @include flex-center();
+                  flex-wrap: wrap;
+                  padding: 1em;
+                  width: 100%;
+                  height: 60vh;
+              }
+              
+              .section h2 {
+                  font-size: 4em;
+                  font-family: montserrat;
+                  font-variant: small-caps;
+              }
+              /* ============================================== */
+              /* Contenedor de la seccion INDICE */
+              
+              .me {
+                  @include flex-center();
+                  flex-flow: column;
+                  width: 100vw;
+                  height: 100vh;
+                  margin-bottom: 8em;
+                  padding: 1em;
+              }
+              /* titulo INDICE */
+              
+              .me .indice h2 {
+                  font-variant: small-caps;
+                  font-size: 2.5em;
+                  font-family: 'montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                  text-shadow: 15px 9px 2px hsla(0, 0%, 75%, 0.61);
+                  margin-bottom: .5em;
+              }
+              /* Estos span son cada uno de las secciones del indice */
+              
+              .span1,
+              .span2,
+              .span3 {
+                  @include flex-center();
+                  width: 26em;
+                  height: 7em;
+              }
+              
+              .number {
+                  flex: 1;
+                  text-align: center;
+                  font-size: 3em;
+                  h2 {
+                      color: rgba(138, 243, 243, 0.966);
+                  }
+              }
+              
+              .text {
+                  display: flex;
+                  align-items: flex-start;
+                  flex-flow: column;
+                  padding: 1em;
+                  flex: 3;
+              }
+              /* ==========seccion presentacion; Quien soy */
+              
+              .quien-soy {
+                  @include full-size();
+                  @include flex-center();
+                  flex-flow: column;
+              }
+              
+              .quien-soy .image-abstracte {
+                  width: 500px;
+                  height: 60vh;
+                  border: 2px solid black;
+                  border-radius: .5em;
+                  background: url(../images/vaso2.jpg);
+                  @include background-fullsize();
+              }
+              
+              .quien-soy .my-description {
+                  flex: 1;
+                  @include flex-center();
+                  flex-flow: column;
+                  width: 500px;
+                  height: 100%;
+                  padding: 1em;
+                  box-shadow: inherit;
+              }
+              
+              .quien-soy .my-description p {
+                  font-style: italic;
+                  font-family: montserrat;
+                  line-height: 1.6em;
+                  width: 100%;
+                  height: 100%;
+              }
+              
+              .quien-soy .my-description p::first-letter {
+                  font-size: 1.7em;
+                  font-weight: 900;
+              }
+              /* =============seccion frontEnd */
+              
+              .frontend-estilo-vida {
+                  width: 100%;
+                  height: 100vh;
+                  padding: 2em;
+                  overflow: hidden;
+                  display: flex;
+                  flex-flow: column;
+                  justify-content: center;
+                  align-items: flex-start;
+                  background: url(../images/footer1.jpg);
+                  @include background-fullsize();
+              }
+              
+              .frontend-estilo-vida h3 {
+                  margin: .6em 0;
+                  border-radius: .5em;
+                  text-transform: uppercase;
+                  background: rgb(13, 206, 206);
+                  box-shadow: 7px 7px 1px hsla(180, 100%, 50%, 0.404);
+                  color: white;
+                  padding: .4em;
+                  font-family: montserrat;
+              }
+              
+              .frontend-estilo-vida p {
+                  text-align: left;
+                  margin: .5em;
+                  width: 30em;
+                  padding: .5em;
+                  border-radius: .5em;
+                  color: rgb(6, 13, 56);
+                  background: hsla(0, 0%, 100%, 0.89);
+              }
+              
+              .frontend-estilo-vida p::first-letter {
+                  font-size: 2em;
+                  font-family: montserrat;
+                  color: rgb(7, 172, 172);
+              }
+              /* ==============footer */
+              /* Seccion total del container del footer*/
+              /* =========================Responsive MediaQuerys========== */
+              
+              @media screen and (max-width:360px) {
+                  .home-home {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      flex-flow: column;
+                      padding: 1em;
+                  }
+                  .text-home {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      flex-flow: column;
+                      justify-content: center;
+                      align-items: flex-start;
+                      padding: 0;
+                      flex: 1;
+                      h4 {
+                          margin: .3em 0 0 0;
+                      }
+                  }
+                  .text-right {
+                      display: flex;
+                      flex-flow: column;
+                      justify-content: center;
+                      align-items: flex-start;
+                      width: 100%;
+                      height: 100%;
+                      background: hsl(0, 0%, 100%, .9);
+                      border-radius: 1em;
+                      flex: 1;
+                      h2,
+                      p {
+                          color: grey;
+                      }
+                  }
+                  //   ===============
+                  .quien-soy .image-abstracte {
+                      width: 100%;
+                      height: 60vh;
+                      background-size: contain;
+                  }
+                  .quien-soy .my-description {
+                      width: 100%;
+                      p {
+                          line-height: 1.6em;
+                          width: 100%;
+                          border-radius: 0;
+                      }
+                  }
+                  .frontend-estilo-vida {
+                      align-items: center;
+                      p {
+                          width: 100%;
+                      }
+                  }
+                  //======
+              }
+              
+              @media screen and (max-width:411px) {
+                  .home-home {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      flex-flow: column;
+                      padding: 3em 1em 1em 1em;
+                  }
+                  .text-home {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      flex-flow: column;
+                      justify-content: center;
+                      align-items: flex-start;
+                      padding: 0;
+                      flex: 1;
+                  }
+                  .text-right {
+                      display: flex;
+                      flex-flow: column;
+                      justify-content: center;
+                      align-items: flex-start;
+                      width: 100%;
+                      height: 100%;
+                      background: hsl(0, 0%, 100%, .9);
+                      border-radius: 1em;
+                      flex: 1;
+                      h2,
+                      p {
+                          color: grey;
+                      }
+                  }
+                  //   ===============
+                  .quien-soy .image-abstracte {
+                      width: 100%;
+                      height: 60vh;
+                      border: none;
+                      background-size: contain;
+                  }
+                  .quien-soy .my-description {
+                      width: 100%;
+                      p {
+                          line-height: 1.6em;
+                          width: 100%;
+                          border-radius: 0;
+                      }
+                  }
+                  .frontend-estilo-vida {
+                      align-items: center;
+                      p {
+                          width: 100%;
+                      }
+                  }
+                  //======
+              }
+              
+              @media screen and (max-width: 320px) {
+                  .home-home {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      flex-flow: column;
+                      padding: 1em;
+                  }
+                  .text-home {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      flex-flow: column;
+                      justify-content: center;
+                      align-items: flex-start;
+                      padding: 0;
+                      flex: 1;
+                      h1 {
+                          font-size: 2.5em;
+                          margin-top: 1em;
+                      }
+                      hr {
+                          margin-top: .5em;
+                          width: 3em;
+                      }
+                      h4 {
+                          margin: 0em;
+                      }
+                      i {
+                          margin: .3em .3em 0 0;
+                      }
+                  }
+                  .text-right {
+                      display: flex;
+                      flex-flow: column;
+                      justify-content: center;
+                      align-items: flex-start;
+                      width: 100%;
+                      min-height: 200px;
+                      margin-bottom: 3em;
+                      background: hsl(0, 0%, 100%, .9);
+                      flex: 1;
+                      p {
+                          color: grey;
+                          font-size: .9em;
+                      }
+                  }
+                  //   ===============
+                  .quien-soy .image-abstracte {
+                      width: 100%;
+                      height: 60vh;
+                      border: none;
+                      background-size: contain;
+                  }
+                  .quien-soy .my-description {
+                      width: 100%;
+                      p {
+                          line-height: 1.6em;
+                          width: 100%;
+                          border-radius: 0;
+                      }
+                  }
+                  .frontend-estilo-vida {
+                      padding: 1em;
+                      align-items: center;
+                      p {
+                          width: 100%;
+                          font-size: .9em;
+                      }
+                  }
+                  //======
+              }
+              
+              @media (max-width:300px) {
+                  .text-right {
+                      margin-top: 2em;
+                      min-height: 250px;
+                  }
+                  .frontend-estilo-vida {
+                      height: 100%;
+                      padding: 1em;
+                      align-items: center;
+                      p {
+                          width: 100%;
+                          height: 100%;
+                          font-size: .8em;
+                      }
+                  }
+              }
+              
+              @media (max-width:600px) {
+                  .home-home {
+                      padding: 4em 1em;
+                      flex-flow: column;
+                      width: 100%;
+                      height: 100%;
+                      //   
+                      .text-home {
+                          display: flex;
+                          align-items: flex-start;
+                          justify-content: center;
+                          min-height: 200px;
+                          width: 100%;
+                          height: 100%;
+                          padding: 0;
+                          flex: 1;
+                      }
+                      .text-right {
+                          align-items: flex-start;
+                          justify-content: center;
+                          max-height: 200px;
+                          width: 100%;
+                          flex: 1;
+                          h2 {
+                              font-size: 4em;
+                          }
+                      }
+                  }
+              }
+              
+              @media (max-width:414px) {
+                  .home-home {
+                      .text-home {
+                          padding: 0;
+                          flex: 2;
+                      }
+                      .text-right {
+                          flex: 1;
+                      }
+                  }
+                  .quien-soy .image-abstracte {
+                      width: 100%;
+                      height: 60vh;
+                      border: none;
+                      background-size: contain;
+                  }
+                  .quien-soy .my-description {
+                      width: 100%;
+                      p {
+                          line-height: 1.6em;
+                          width: 100%;
+                          border-radius: 0;
+                      }
+                  }
+                  .frontend-estilo-vida {
+                      padding: 0 1em;
+                      align-items: center;
+                      p {
+                          width: 100%;
+                          font-size: .9em;
+                      }
+                  }
+              }
+              
+              @media (max-width:560px) {
+                  .span1,
+                  .span2,
+                  .span3 {
+                      width: 100%;
+                  }
+                  .frontend-estilo-vida {
+                      padding: 0 1em;
+                      align-items: center;
+                      p {
+                          width: 100%;
+                          font-size: .9em;
+                      }
+                  }
+              }
+              
+              @media screen and (min-height:812px) {
+                  .footer {
+                      max-height: 50vh;
+                      margin-bottom: 4em;
+                  }
+              }
+              
+              @media (max-width:768px) {
+                  .text-home {
+                      padding: 0 2em;
+                  }
+                  .text-right {
+                      width: 50%;
+                      height: 200px;
+                  }
+              }
+              
+              @media (max-width:1024px) {
+                  .text-right {
+                      width: 50%;
+                      height: 200px;
+                  }
+                  .frontend-estilo-vida {
+                      justify-content: flex-start;
+                  }
+              }
+              
+              @media (max-width:540px) {
+                  .text-home {
+                      padding: 0;
+                      flex: 2;
+                  }
+                  .text-right {
+                      flex: 1;
+                  }
+              }
+              
+              @media (max-width:280px) {
+                  .span1,
+                  .span2,
+                  .span3 {
+                      .number {
+                          font-size: 1.5em;
+                          text-align: right;
+                      }
+                  }
+              }

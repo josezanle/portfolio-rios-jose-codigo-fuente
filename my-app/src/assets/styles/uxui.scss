@@ -1,0 +1,185 @@
+.home-ux-ui {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/uxui.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 0 1em;
+}
+
+.home-ux-ui p {
+    font-style: italic;
+    font-variant: small-caps;
+    position: relative;
+    padding: 1em;
+    color: white;
+    background: hsl(0, 0%, 0%, .6);
+    border-radius: .5em;
+}
+
+.home-ux-ui p::before {
+    font-style: italic;
+    font-family: 'chivo';
+    content: open-quote;
+    color: rgb(184, 174, 174);
+    position: absolute;
+    top: -.2em;
+    left: 0;
+    font-size: 4em;
+}
+
+
+/* ====================================================================== */
+
+.section {
+    width: 100%;
+    height: 100%;
+    p {
+        border: 3px solid silver;
+        padding: 1em;
+        margin: 0;
+        border-radius: 1em;
+    }
+}
+
+
+/* ==========================ux ui gallery============== */
+
+.bloque1,
+.bloque2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 2em 1em;
+    flex-flow: row wrap;
+    margin: 2em 0;
+    background: #0a4f70;
+}
+
+.bloque3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 25vh;
+    padding: 1em;
+    background: silver;
+}
+
+
+/* ================================= */
+
+.final {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/team.jpg) center no-repeat;
+    background-size: cover;
+    p {
+        background: hsl(0, 0%, 100%, .9);
+        padding: 1.5em;
+        border-radius: 0 1em 1em 1em;
+        color: grey;
+        width: 35em;
+    }
+}
+
+// ======mdia=====
+@media (max-width:600px) {
+    .home-ux-ui {
+        width: 100vw;
+        height: 40vh;
+    }
+    .bloque1,
+    .bloque2,
+    .bloque3 {
+        width: 100vw;
+        height: 100%;
+        padding: 2em 0;
+    }
+    .a,
+    .perfil-card,
+    .minificado {
+        &:before {
+            display: none;
+        }
+    }
+    .final {
+        height: 100vh;
+        align-items: flex-start;
+        padding: 3em 1em 0 1em;
+        p {
+            background: hsl(0, 0%, 100%, .8);
+            padding: 1.5em;
+            border-radius: 0 1em 1em 1em;
+            color: grey;
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width:360px) {
+    .bloque3 {
+        flex-flow: column;
+    }
+}
+
+@media (max-width:768px) {
+    .bloque1,
+    .bloque2 {
+        width: 100vw;
+        height: 100%;
+        padding: 2em 0;
+    }
+    .a,
+    .perfil-card,
+    .minificado {
+        &:before {
+            display: none;
+        }
+    }
+    .final {
+        height: 100vh;
+        align-items: flex-start;
+        padding-top: 6em;
+        p {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .home-ux-ui {
+        height: 45vh;
+    }
+    .bloque1,
+    .bloque2 {
+        width: 100vw;
+        height: 100%;
+        padding: 2em 0;
+    }
+    .final {
+        height: 100vh;
+        align-items: flex-start;
+        padding-top: 6em;
+        p {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width:280px) {
+    .bloque3 {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+    }
+}

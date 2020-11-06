@@ -1,0 +1,407 @@
+.home-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/skills.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-skills h3 {
+    font-style: italic;
+    font-family: 'chivo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-skills h1 {
+    text-transform: uppercase;
+    font-family: 'montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-skills h4 {
+    margin-top: .5em;
+    font-size: 1.3em;
+    font-variant: small-caps;
+    font-family: 'montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(13, 206, 206);
+    box-shadow: 0 1em .6em hsla(180, 100%, 50%, 0.300);
+    color: white;
+    padding: .2em 1em;
+    border-radius: .2em;
+}
+
+
+/* ============================================== */
+
+.section {
+    width: 100%;
+    height: 100%;
+    h2 {
+        margin: .5em;
+    }
+    p {
+        border: 3px solid silver;
+        padding: 1em;
+        margin: .5em;
+        border-radius: 1em;
+    }
+}
+
+// =================================================
+.cards {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-image: linear-gradient(to top, hsla(0, 0%, 100%, 0.822), hsla(0, 0%, 100%, 0.808)), url(../images/ui-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-react,
+.card-javascript,
+.card-css3,
+.card-html5,
+.card-sass,
+.card-git,
+.card-npm {
+    width: 10em;
+    height: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column;
+    box-sizing: border-box;
+    padding: .5em;
+    margin: 3em;
+    border-radius: 1em;
+    background: white;
+    box-shadow: 1px 1px 4px hsl(0, 0%, 0%, .5);
+    // x
+    h2 {
+        flex: 3;
+        width: 100%;
+        height: 100%;
+        font-size: 2.3em;
+        margin-bottom: 2px;
+        font-family: 'montserrat';
+    }
+    h5 {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        font-size: 1.3em;
+        margin-bottom: 2px;
+        font-family: 'montserrat';
+        font-variant: small-caps;
+    }
+    p {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        margin-bottom: 2px;
+        font-size: .8em;
+        font-style: italic;
+    }
+    .image {
+        flex: 5;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4em;
+    }
+}
+
+.card-react i {
+    color: #0ef3f3;
+}
+
+.card-javascript i {
+    color: #fbff00;
+}
+
+.card-css3 i {
+    color: #0044ff;
+}
+
+.card-html5 i {
+    color: hsl(38, 100%, 50%);
+}
+
+// 
+.card-sass i {
+    color: hsl(337, 88%, 39%);
+}
+
+.card-git i {
+    color: hsl(12, 89%, 44%);
+}
+
+.card-npm i {
+    color: hsl(12, 100%, 50%);
+}
+
+
+/* =================================================================================== */
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 3em 0;
+    flex-flow: column;
+}
+
+.video h3 {
+    font-size: 2em;
+    border-radius: .5em;
+    text-transform: uppercase;
+    background: rgb(13, 206, 206);
+    box-shadow: 7px 7px 1px hsla(180, 100%, 50%, 0.404);
+    color: white;
+    padding: .4em;
+    font-family: montserrat;
+}
+
+.video p {
+    color: grey;
+    font-size: 2em;
+    font-weight: 100;
+    padding: 1em;
+    font-variant: small-caps;
+    font-family: montserrat;
+}
+
+.ReactPlayer {
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ======================================== */
+
+.espectativas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+    height: 70vh;
+    flex-flow: column;
+    padding: 3em;
+    background-image: linear-gradient(to top, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 100%, 0.5)), url(../images/footer-skills-optimizada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.espectativas h2 {
+    margin: .6em 0;
+    border-radius: .5em;
+    text-transform: uppercase;
+    background: rgb(13, 206, 206);
+    box-shadow: 7px 7px 1px hsla(180, 100%, 50%, 0.404);
+    color: white;
+    padding: .4em;
+    font-family: montserrat;
+}
+
+.espectativas p {
+    width: 50%;
+    margin: .6em 0;
+    padding: .5em;
+    border-radius: .5em;
+    color: grey;
+    background: hsl(0, 0%, 100%, .9);
+    font-family: montserrat;
+    box-shadow: 0 1em .6em hsla(180, 100%, 50%, 0.300);
+}
+
+
+/* mediaqueris */
+
+@media (max-width:600px) {
+    .card-react,
+    .card-javascript,
+    .card-css3,
+    .card-html5,
+    .card-sass,
+    .card-git,
+    .card-npm {
+        margin: 1em;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    html,
+    body {
+        width: 100vw;
+        height: 100%;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .home-skills {
+        width: 100vw;
+        height: 100vh;
+        background-position: left;
+    }
+    // ===============
+    .video {
+        padding: 0em;
+        width: 100%;
+        height: 100%;
+    }
+    .video h3 {
+        padding: .5em;
+        margin: 0;
+        font-size: 1em;
+    }
+    .video p {
+        padding: 0;
+        margin: .5em;
+    }
+    /* x */
+    .espectativas {
+        padding: 1em;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        p {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width:411px),
+(max-width:414px) {
+    .espectativas {
+        height: 600px;
+        padding: 1em;
+        p {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .card-react,
+    .card-javascript,
+    .card-css3,
+    .card-html5,
+    .card-sass,
+    .card-git,
+    .card-npm {
+        margin: 1em;
+    }
+}
+
+@media (max-height:812px) {
+    .espectativas {
+        min-height: 600px;
+    }
+}
+
+@media (max-width:320px),
+(max-width:414px) {
+    .espectativas {
+        height: 500px;
+        padding: 1em;
+    }
+}
+
+@media (max-width:768px) {
+    .home-skills {
+        height: 50vh;
+    }
+    .espectativas {
+        padding: 1em;
+        height: 800px;
+        p {
+            width: 450px;
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .home-skills {
+        height: 50vh;
+    }
+    .video {
+        height: 60vh;
+        margin: 2em 0;
+    }
+    .espectativas {
+        padding: 1em;
+        height: 90vh;
+        background-size: cover;
+        background-position: center;
+        p {
+            width: 450px;
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .video {
+        height: 100vh;
+    }
+    .card-react,
+    .card-javascript,
+    .card-css3,
+    .card-html5,
+    .card-sass,
+    .card-git,
+    .card-npm {
+        margin: 1em;
+    }
+}
+
+@media (max-width:280px) {
+    .home-skills {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 1em;
+        width: 100vw;
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+        h3,
+        h1,
+        h4 {
+            font-size: 1em;
+            margin: 0 0 .3em 0;
+        }
+        .card-react,
+        .card-javascript,
+        .card-css3,
+        .card-html5,
+        .card-sass,
+        .card-git,
+        .card-npm {
+            margin-top: 3em;
+        }
+    }
+    .espectativas {
+        padding: 1em;
+        background-size: cover;
+        background-position: center;
+        p {
+            width: 100%;
+        }
+    }
+}
